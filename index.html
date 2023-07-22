@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My CV</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  </head>
+  <body>
+    <header>
+      <h1>gilangr1440</h1>
+      <ul>
+        <li><a href="#second">About</a></li>
+        <li><a href="#second">Experiences</a></li>
+        <li><a href="#third">Education</a></li>
+        <li><a href="#third">Skills</a></li>
+        <li><a href="#fourth">Interests</a></li>
+        <li><a href="#fourth">Award</a></li>
+      </ul>
+    </header>
+    <section class="first">
+      <div class="text-first-section">
+        <h3>Web Designer</h3>
+        <h1>Hi, My name is Gilang Ramadhan I am Web Designer</h1>
+        <h3 class="desc-1">Graduate in Informatics Engineering in 2022 and have experience designing web pages for 1 year</h3>
+      </div>
+      <div class="img-header">
+        <img src="assets/asset-header.png" alt="gambar" />
+      </div>
+    </section>
+    <section id="second">
+      <div class="about">
+        <h1 class="judul">About</h1>
+        <ul>
+          <li>Name: Gilang Ramadhan</li>
+          <li>Date of birth: 26th November 2000</li>
+          <li>Email: gilangr1440@gmail.com</li>
+          <li>State of residence: West Java</li>
+          <li>Address: Muara Sanding, Garut Kota</li>
+        </ul>
+      </div>
+      <div class="experiences">
+        <h1 class="judul">Experiences</h1>
+        <ul>
+          <li>Building E Commerce</li>
+          <li>Building School Dashboard</li>
+          <li>Building Sodcial Media</li>
+        </ul>
+      </div>
+    </section>
+    <section id="third">
+      <div class="education">
+        <h1 class="judul">Education</h1>
+        <div class="list">
+          <ul class="text-education">
+            <li>SDN Muara Sanding 1</li>
+            <li>SMPN 3 Tarogong Kidul</li>
+            <li>SMKN 3 Garut</li>
+            <li>Institut Teknologi Garut</li>
+          </ul>
+          <ul>
+            <li><img src="assets/book.png" alt="book" width="50px" /></li>
+            <li><img src="assets/book.png" alt="book" width="50px" /></li>
+            <li><img src="assets/book.png" alt="book" width="50px" /></li>
+            <li><img src="assets/hat.png" alt="hat" width="60px" /></li>
+          </ul>
+        </div>
+      </div>
+      <div class="skills">
+        <h1 class="judul">Skills</h1>
+        <div class="list">
+          <ul class="text-skills">
+            <li>HTML/CSS</li>
+            <li>Javascript</li>
+            <li>MySql</li>
+          </ul>
+          <ul>
+            <li>
+              <img src="assets/star-fill.png" width="50px" /><img src="assets/star-fill.png" width="50px" /><img src="assets/star-fill.png" width="50px" /><img src="assets/star-fill.png" width="50px" /><img
+                src="assets/star-duotone.png"
+                width="50px"
+              />
+            </li>
+            <li>
+              <img src="assets/star-fill.png" width="50px" /><img src="assets/star-fill.png" width="50px" /><img src="assets/star-fill.png" width="50px" /><img src="assets/star-duotone.png" width="50px" /><img
+                src="assets/star-duotone.png"
+                width="50px"
+              />
+            </li>
+            <li>
+              <img src="assets/star-fill.png" width="50px" /><img src="assets/star-fill.png" width="50px" /><img src="assets/star-duotone.png" width="50px" /><img src="assets/star-duotone.png" width="50px" /><img
+                src="assets/star-duotone.png"
+                width="50px"
+              />
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section id="fourth">
+      <div class="interests">
+        <h1 class="judul">Interests</h1>
+        <div class="list">
+          <ul class="text-interests">
+            <li>Music and singing</li>
+            <li>Coding</li>
+            <li>Football</li>
+          </ul>
+          <ul>
+            <li><img src="assets/music-fill.png" width="50px" /></li>
+            <li><img src="assets/code.png" width="50px" /></li>
+            <li><img src="assets/ball.png" width="50px" /></li>
+          </ul>
+        </div>
+      </div>
+      <div class="award">
+        <h1 class="judul">Award</h1>
+        <ul>
+          <li>The best E-Commerce Design 2023</li>
+          <li>The best Dashboard Design 2023</li>
+        </ul>
+      </div>
+    </section>
+    <footer>Copyright &copy; Gilang Ramadhan 2023</footer>
+
+    <script>
+      $("a").click(function (e) {
+        $("html, body").animate(
+          {
+            scrollTop: $($(this).attr("href")).offset().top,
+          },
+          1000
+        );
+      });
+    </script>
+  </body>
+</html>
